@@ -1,0 +1,63 @@
+{
+	"name": "react-zap-boilerplate",
+	"version": "0.0.1",
+	"description": "A React component UI Lib boilerplate",
+	"main": "src/index.js",
+	"scripts": {
+		"start": "start-storybook -p 6006",
+		"build": "webpack --mode production",
+		"build-storybook": "build-storybook"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/wanderlima/react-zap.git"
+	},
+	"keywords": [
+		"react",
+		"js",
+		"component",
+		"ui",
+		"library",
+		"kit",
+		"zap",
+		"styled-components"
+	],
+	"author": "Wander Lima <wander@wanderlima.com> (https://atah.com.br)",
+	"homepage": "https://github.com/wanderlima/react-zap#readme",
+	"bugs": {
+		"url": "https://github.com/wanderlima/react-zap/issues"
+	},
+	"license": "MIT",
+	"dependencies": {
+		"react": "^16.8.2",
+		"react-dom": "^16.8.2",
+		"styled-components": "^4.1.3"
+	},
+	"peerDependencies": {
+		"react": "^16.8.2",
+		"react-dom": "^16.8.2",
+		"styled-components": "^4.1.3"
+	},
+	"devDependencies": {
+		"@babel/cli": "^7.2.3",
+		"@babel/core": "^7.3.3",
+		"@babel/plugin-proposal-class-properties": "^7.3.3",
+		"@babel/plugin-proposal-decorators": "^7.3.0",
+		"@babel/plugin-syntax-dynamic-import": "^7.2.0",
+		"@babel/plugin-syntax-object-rest-spread": "^7.2.0",
+		"@babel/plugin-transform-modules-commonjs": "^7.2.0",
+		"@babel/preset-env": "^7.3.1",
+		"@babel/preset-react": "^7.0.0",
+		"@storybook/addon-actions": "^4.1.11",
+		"@storybook/addon-console": "^1.1.0",
+		"@storybook/addon-knobs": "^4.1.11",
+		"@storybook/addon-links": "^4.1.11",
+		"@storybook/addon-options": "^4.1.11",
+		"@storybook/addons": "^4.1.11",
+		"@storybook/react": "^4.1.11",
+		"babel-loader": "^8.0.5",
+		"babel-plugin-styled-components": "^1.10.0",
+		"webpack": "^4.29.4",
+		"webpack-cli": "^3.2.3"
+	}
+}
