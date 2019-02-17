@@ -1,27 +1,46 @@
 import React from 'react';
 import styled, { css } from 'styled-components'
-import * as THEME from '../../theme';
+import defaultTheme from '../../theme'
 
-const Container = styled.button`
-	padding: 0.5em 1em;
-	color: ${THEME.WHITE};
-	background: ${THEME.DARK_GREY};
+
+const ButtonWrapper = styled.button`
+
 	outline: none;
-	border: none;
-	border-radius: 3px;
-	font-size: ${THEME.FONT_SIZE};
+	cursor: pointer;
+	background: none;
+	padding: 0.5em 1em;
+	color: ${props => props.theme.font.color};
+	font-size: ${props => props.theme.font.size};
+	font-family: ${props => props.theme.font.main};
+	height: ${props => props.theme.button.minHeight};
+	border: solid 0.2em ${props => props.theme.color.primary};
+	border-radius: ${props => props.theme.button.borderRadius.min};
+
+	:disabled{
+		cursor: initial;
+		color: ${props => props.theme.color.gray.main};
+		background: ${props => props.theme.color.gray.light};
+		border-color: ${props => props.theme.color.gray.main};
+	}
+
 `;
 
 
 const Button = (props) => {
 	return (
-		<Container
+		<ButtonWrapper
 			className="zap-btn"
 			{...props}
 		>
 			{props.children}
-		</Container>
+		</ButtonWrapper>
 	);
 }
 
+
 export default Button;
+
+
+Button.defaultProps = {
+	theme: defaultTheme
+}
