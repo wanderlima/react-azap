@@ -1,11 +1,11 @@
-# ⚡ React AZap Kit boilerplate
+# ⚡ React AZap
 
 An easy to use React UI lib boilerplate.
 
 >This project is under development.
 
- - [ ] Storybook dev env
- - [ ] Styled Components
+ - [x] Storybook dev env
+ - [x] Styled Components
  - [ ] Theme
  - [ ] Plop Component generator
  - [ ] Tests
@@ -20,8 +20,8 @@ An easy to use React UI lib boilerplate.
 ## Get Started
 
 ```
-git clone https://github.com/wanderlima/react-zap my-project
-cd my-project
+git clone https://github.com/wanderlima/react-azap my-lib
+cd my-lib
 rm -rf .git
 git init
 ```
