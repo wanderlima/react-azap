@@ -26,9 +26,9 @@ module.exports = {
 		extensions: ['.scss', '.js', '.json', '.png', '.gif', '.jpg', '.svg'],
 	},
 	output: {
-		path: path.resolve(__dirname, 'dist/'),
 		publicPath: '',
-		filename: 'myLib.js',
 		libraryTarget: 'umd',
+		filename: 'reactAzap.js',
+		path: path.resolve(__dirname, 'dist/'),
 	},
 };

@@ -29,7 +29,7 @@ const ButtonWrapper = styled.button`
 const Button = (props) => {
 	return (
 		<ButtonWrapper
-			className="zap-btn"
+			className="azap-btn"
 			{...props}
 		>
 			{props.children}

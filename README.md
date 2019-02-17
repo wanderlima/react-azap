@@ -1,6 +1,6 @@
-# ⚡ React ZAP UI lib boilerplate
+# ⚡ React AZap Kit boilerplate
 
-An easy to use React ZAP UI lib boilerplate.
+An easy to use React UI lib boilerplate.
 
 >This project is under development.
 
