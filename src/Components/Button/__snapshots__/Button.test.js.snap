@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Button component should render correctly 1`] = `
+<Button__ButtonWrapper
+  className="azap-btn"
+  onClick={[Function]}
+  theme={
+    Object {
+      "button": Object {
+        "borderRadius": Object {
+          "min": "1px",
+        },
+        "height": "2.6em",
+      },
+      "color": Object {
+        "gray": Object {
+          "dark": "#202020",
+          "light": "#F7F7F7",
+          "main": "#CCC",
+        },
+        "primary": "#FFEB3B",
+        "text": Object {
+          "main": "#202020",
+        },
+      },
+      "font": Object {
+        "color": "#202020",
+        "main": "Source Sans Pro, sans-serif",
+        "minHeigh": "1em",
+        "monospace": "",
+        "size": "1em",
+      },
+    }
+  }
+>
+  <span>
+    Label
+  </span>
+</Button__ButtonWrapper>
+`;

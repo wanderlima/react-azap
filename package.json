@@ -7,7 +7,8 @@
 		"start": "npm run storybook",
 		"build": "webpack --mode production",
 		"storybook": "start-storybook -p 6006",
-		"storybook:build": "build-storybook"
+		"storybook:build": "build-storybook",
+		"test": "jest --watchAll"
 	},
 	"repository": {
 		"type": "git",
@@ -53,8 +54,13 @@
 		"@storybook/addon-options": "^4.1.11",
 		"@storybook/addons": "^4.1.11",
 		"@storybook/react": "^4.1.11",
+		"babel-jest": "^24.1.0",
 		"babel-loader": "^8.0.5",
 		"babel-plugin-styled-components": "^1.10.0",
+		"enzyme": "^3.9.0",
+		"enzyme-adapter-react-16": "^1.9.1",
+		"enzyme-to-json": "^3.3.5",
+		"jest": "^24.1.0",
 		"storybook-readme": "^4.0.5",
 		"webpack": "^4.29.4",
 		"webpack-cli": "^3.2.3"

@@ -6,9 +6,9 @@ An easy to use React UI lib boilerplate.
 
  - [x] Storybook dev env
  - [x] Styled Components
- - [ ] Theme
+ - [x] Theme
  - [ ] Plop Component generator
- - [ ] Tests
+ - [x] Tests with Jest + Enzyme
  - [ ] JSLint
 
 ## Highlights
@@ -16,6 +16,7 @@ An easy to use React UI lib boilerplate.
  1. **Dev environment** with Storybook
  2. Styled Components
  3. Plop Component generator
+ 4. Jest + Enzyme
 
 ## Get Started
 

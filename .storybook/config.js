@@ -12,7 +12,7 @@ setOptions({
 
 addDecorator(themeDecorator)
 
-const req = require.context('../src/Components', true, /[^/]+\/stories.js$/);
+const req = require.context('../src/Components', true, /.stories.js$/);
 
 function loadStories() {
 	req.keys().forEach(filename => req(filename));
