@@ -1,6 +1,8 @@
 # ⚡ React AZap
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Dependencies](https://img.shields.io/david/wanderlima/react-azap/next.svg)](https://david-dm.org/wanderlima/react-azap)
+[![DevDependencies](https://img.shields.io/david/dev/wanderlima/react-azap/next.svg)](https://david-dm.org/wanderlima/react-azap?type=dev)
 
 An easy to use React UI lib boilerplate.
 
