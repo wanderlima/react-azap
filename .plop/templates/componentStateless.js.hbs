@@ -1,0 +1,25 @@
+import React from 'react';
+import styled, { css } from 'styled-components';
+import defaultTheme from '../../theme';
+
+const {{ properCase componentName }}Wrapper = styled.div`
+	background: #F7F7F7;
+`
+
+const {{ properCase componentName }} = (props) => {
+	return (
+		<{{ properCase componentName }}Wrapper
+			className="azap-{{ dashCase componentName }}"
+			{...props}
+		>
+			{props.children}
+		</{{ properCase componentName }}Wrapper>
+	);
+};
+
+export default {{ properCase componentName }};
+
+
+{{ properCase componentName }}.defaultProps = {
+	theme: defaultTheme
+}

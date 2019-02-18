@@ -6,6 +6,7 @@
 	"plugins": [
 		"babel-plugin-styled-components",
 		"@babel/plugin-syntax-object-rest-spread",
+		"@babel/plugin-proposal-export-default-from",
 		[
 			"@babel/plugin-proposal-decorators",
 			{

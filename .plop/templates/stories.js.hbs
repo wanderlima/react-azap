@@ -4,21 +4,18 @@ import { action } from '@storybook/addon-actions';
 import { boolean, text, withKnobs } from '@storybook/addon-knobs';
 import { withDocs } from 'storybook-readme';
 
-import { Button } from '../../components';
+import { {{ properCase componentName }} } from '../../components';
 import README from './README.md';
 
-const stories = storiesOf('Button', module);
+const stories = storiesOf('{{ properCase componentName }}', module);
 stories.addDecorator(withKnobs);
 
 stories
 	.add(
 		'Default',
 		withDocs(README, () => (
-			<Button
-				onClick={action('onClick')}
-				disabled={boolean('Disabled', false)}
-			>
-				{text('Label', 'Button Label')}
-			</Button>
+			<{{ properCase componentName }}>
+				{text('Label', '{{ properCase componentName }} Label')}
+			</{{ properCase componentName }}>
 		))
 	);

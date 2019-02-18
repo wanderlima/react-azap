@@ -1,6 +1,6 @@
 import React from 'react';
-import styled, { css } from 'styled-components'
-import defaultTheme from '../../theme'
+import styled, { css } from 'styled-components';
+import defaultTheme from '../../theme';
 
 
 const ButtonWrapper = styled.button`
@@ -29,7 +29,7 @@ const ButtonWrapper = styled.button`
 const Button = (props) => {
 	return (
 		<ButtonWrapper
-			className="azap-btn"
+			className="azap-button"
 			{...props}
 		>
 			{props.children}

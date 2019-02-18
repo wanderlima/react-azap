@@ -2,7 +2,7 @@
 
 exports[`Testing Button component should render correctly 1`] = `
 <Button__ButtonWrapper
-  className="azap-btn"
+  className="azap-button"
   onClick={[Function]}
   theme={
     Object {

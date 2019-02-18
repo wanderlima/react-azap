@@ -1,5 +1,7 @@
 # ⚡ React AZap
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 An easy to use React UI lib boilerplate.
 
 >This project is under development.
