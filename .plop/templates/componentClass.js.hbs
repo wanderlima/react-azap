@@ -1,0 +1,116 @@
+import React from 'react'
+import PropTypes from 'prop-types'
+import styled, { css } from 'styled-components';
+import defaultTheme from '../../theme';
+import { Button } from '../../components';
+
+const {{ properCase componentName }}Wrapper = styled.div`
+	padding: 1em;
+	background: #F7F7F7;
+	font-size: ${props => props.theme.font.size};
+	font-family: ${props => props.theme.font.main};
+`
+
+const Label = styled.label`
+	font-weight: bolder;
+`
+
+
+class {{ properCase componentName }} extends React.Component {
+
+
+    /**
+     * displayName
+     */
+	static displayName = '{{ properCase componentName }}'
+
+
+
+    /**
+    * propTypes
+    */
+	static propTypes = {
+		theme: PropTypes.object.isRequired
+	}
+
+
+
+	/**
+	* defaultProps
+	*/
+	static defaultProps = {
+		theme: defaultTheme
+	}
+
+
+
+    /**
+     * state
+     */
+	state = {
+		count: 0
+	}
+
+
+
+    /**
+	* constructor
+	*
+	* @param {Object} props
+	*/
+	constructor(props) {
+		super(props);
+	}
+
+
+
+    /**
+	* componentDidMount
+	*/
+	componentDidMount() {
+		// ...
+	}
+
+
+
+	/**
+	 * setCount
+	 */
+	setCount() {
+		this.setState({ count: this.state.count + 1 })
+	}
+
+
+
+    /**
+    * render
+    */
+	render() {
+
+		const { count } = this.state;
+
+
+		return (
+			<{{ properCase componentName }}Wrapper
+				className="azap-{{ dashCase componentName }}"
+				{...this.props}
+			>
+				<p><Label>{this.props.children}</Label> {count}</p>
+				<p>
+					<Button
+						disabled={count === 2}
+						onClick={() => this.setCount()}
+					>
+						CLICK
+					</Button>
+				</p>
+			</{{ properCase componentName }}Wrapper>
+		);
+
+	}
+
+}
+
+
+
+export default {{ properCase componentName }};

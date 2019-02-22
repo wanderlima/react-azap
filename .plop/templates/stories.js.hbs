@@ -8,14 +8,14 @@ import { {{ properCase componentName }} } from '../../components';
 import README from './README.md';
 
 const stories = storiesOf('{{ properCase componentName }}', module);
+stories.addDecorator(withReadme(README));
 stories.addDecorator(withKnobs);
 
 stories
 	.add(
-		'Default',
-		withDocs(README, () => (
+		'Default', () => (
 			<{{ properCase componentName }}>
-				{text('Label', '{{ properCase componentName }} Label')}
+				{text('Label', 'Label')}
 			</{{ properCase componentName }}>
-		))
+		)
 	);

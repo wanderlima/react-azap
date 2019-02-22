@@ -1,24 +1,42 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types'
 import styled, { css } from 'styled-components';
 import defaultTheme from '../../theme';
+import { Button } from '../../components';
 
 const {{ properCase componentName }}Wrapper = styled.div`
 	padding: 1em;
 	background: #F7F7F7;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-size: ${props => props.theme.font.size};
+	font-family: ${props => props.theme.font.main};
+`
+
+const Label = styled.label`
+	font-weight: bolder;
 `
 
 
 const {{ properCase componentName }} = (props) => {
+
+	const [count, setCount] = useState(0);
+
 	return (
 		<{{ properCase componentName }}Wrapper
 			className="azap-{{ dashCase componentName }}"
 			{...props}
 		>
-			{props.children}
+			<p><Label>{props.children}</Label> {count}</p>
+			<p>
+				<Button
+					disabled={count === 2}
+					onClick={() => setCount(count + 1)}
+				>
+					CLICK
+				</Button>
+			</p>
 		</{{ properCase componentName }}Wrapper>
 	);
+
 };
 
 

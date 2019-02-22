@@ -15,22 +15,42 @@ module.exports = plop => {
 				default: "ComponentName"
 			},
 			{
-				type: "confirm",
-				name: "stateless",
-				message: "Is it a stateless Component?",
-				default: "y"
-			},
+				type: "list",
+				name: "componentType",
+				message: "Select a component type...",
+				choices: [
+					'Functional Stateless',
+					'Functional Stateful',
+					'Class'
+				]
+			}
 		],
 
 		actions: data => {
 
 			var actions = [];
 
-			if (data.stateless) {
+			if (data.componentType == 'Functional Stateless') {
 				actions.push({
 					type: "add",
 					path: `${PATH}/{{componentName}}/{{componentName}}.js`,
 					templateFile: "./templates/componentStateless.js.hbs"
+				});
+			}
+
+			if (data.componentType == 'Functional Stateful') {
+				actions.push({
+					type: "add",
+					path: `${PATH}/{{componentName}}/{{componentName}}.js`,
+					templateFile: "./templates/componentStateful.js.hbs"
+				});
+			}
+
+			if (data.componentType == 'Class') {
+				actions.push({
+					type: "add",
+					path: `${PATH}/{{componentName}}/{{componentName}}.js`,
+					templateFile: "./templates/componentClass.js.hbs"
 				});
 			}
 
