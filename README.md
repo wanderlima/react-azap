@@ -6,21 +6,12 @@
 
 An easy to use React UI lib boilerplate.
 
->This project is under development.
-
- - [x] Storybook dev env
- - [x] Styled Components
- - [x] Theme
- - [x] Plop Component generator
- - [x] Tests with Jest + Enzyme
- - [ ] JSLint
-
 ## Highlights
 
- 1. **Dev environment** with Storybook
- 2. Styled Components
- 3. Plop Component generator
- 4. Jest + Enzyme
+ 1. **Dev environment** with [Storybook]([Storybook](https://storybook.js.org/))
+ 2. [Styled Components](https://www.styled-components.com/)
+ 3. [Plop](https://plopjs.com/) Component generator
+ 4. [Jest](https://jestjs.io/) + [Enzyme](https://airbnb.io/enzyme/)
 
 ## Get Started
 
@@ -36,6 +27,22 @@ git init
 npm i
 npm start
 ```
+
+### Tests
+Run tests of your components using:
+```
+npm test
+```
+
+### Component Generator
+Use the Plop Component Generator to start a new component [ Class | Functional Stateless | Functional Stateful ].
+```
+npm run generator
+```
+A new component will be generated with all required files and an import & export will be added to src/components/index.js.
+
+*ATTENTION:* Update the reference if you delete/rename your component on src/components/index.js.
+
 
 ***
 #### License

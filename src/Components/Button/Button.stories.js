@@ -16,8 +16,8 @@ stories
 	.add(
 		'Default', () => (
 			<Button
-				onClick={action('onClick')}
-				disabled={boolean('Disabled', false)}
+				onClick={ action('onClick') }
+				disabled={ boolean('Disabled', false) }
 			>
 				{text('Label', 'Label')}
 			</Button>

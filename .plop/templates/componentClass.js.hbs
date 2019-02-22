@@ -7,8 +7,8 @@ import { Button } from '../../components';
 const {{ properCase componentName }}Wrapper = styled.div`
 	padding: 1em;
 	background: #F7F7F7;
-	font-size: ${props => props.theme.font.size};
-	font-family: ${props => props.theme.font.main};
+	font-size: ${ props => props.theme.font.size };
+	font-family: ${ props => props.theme.font.main };
 `
 
 const Label = styled.label`
@@ -93,7 +93,7 @@ class {{ properCase componentName }} extends React.Component {
 		return (
 			<{{ properCase componentName }}Wrapper
 				className="azap-{{ dashCase componentName }}"
-				{...this.props}
+				{ ...this.props }
 			>
 				<p><Label>{this.props.children}</Label> {count}</p>
 				<p>
