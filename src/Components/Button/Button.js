@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types'
 import styled, { css } from 'styled-components';
 import defaultTheme from '../../theme';
 
@@ -38,9 +39,30 @@ const Button = (props) => {
 }
 
 
-export default Button;
+
+/**
+ * displayName
+ */
+Button.displayName = 'Button';
 
 
+
+/**
+ * propTypes
+ */
+Button.propTypes = {
+	theme: PropTypes.object.isRequired
+}
+
+
+
+/**
+ * defaultProps
+ */
 Button.defaultProps = {
 	theme: defaultTheme
 }
+
+
+
+export default Button;

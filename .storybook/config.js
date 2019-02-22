@@ -2,7 +2,7 @@ import '@storybook/addon-console';
 import { configure, addDecorator } from '@storybook/react';
 import { withOptions } from "@storybook/addon-options";
 
-import themeDecorator from './themeDecorator'
+import themeDecorator from './themeDecorator';
 
 addDecorator(
 	withOptions({
@@ -12,12 +12,12 @@ addDecorator(
 	})
 );
 
-
-addDecorator(themeDecorator)
+addDecorator(themeDecorator);
 
 const req = require.context('../src/components', true, /.stories.js$/);
 
 function loadStories() {
+	require('./Welcome')
 	req.keys().forEach(filename => req(filename));
 }
 

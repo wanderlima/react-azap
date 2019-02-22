@@ -33,7 +33,7 @@ module.exports = plop => {
 			if (data.componentType == 'Functional Stateless') {
 				actions.push({
 					type: "add",
-					path: `${PATH}/{{componentName}}/{{componentName}}.js`,
+					path: `${PATH}/{{properCase componentName}}/{{properCase componentName}}.js`,
 					templateFile: "./templates/componentStateless.js.hbs"
 				});
 			}
@@ -41,7 +41,7 @@ module.exports = plop => {
 			if (data.componentType == 'Functional Stateful') {
 				actions.push({
 					type: "add",
-					path: `${PATH}/{{componentName}}/{{componentName}}.js`,
+					path: `${PATH}/{{properCase componentName}}/{{properCase componentName}}.js`,
 					templateFile: "./templates/componentStateful.js.hbs"
 				});
 			}
@@ -49,32 +49,32 @@ module.exports = plop => {
 			if (data.componentType == 'Class') {
 				actions.push({
 					type: "add",
-					path: `${PATH}/{{componentName}}/{{componentName}}.js`,
+					path: `${PATH}/{{properCase componentName}}/{{properCase componentName}}.js`,
 					templateFile: "./templates/componentClass.js.hbs"
 				});
 			}
 
 			actions.push({
 				type: "add",
-				path: `${PATH}/{{componentName}}/{{componentName}}.stories.js`,
+				path: `${PATH}/{{properCase componentName}}/{{properCase componentName}}.stories.js`,
 				templateFile: "./templates/stories.js.hbs"
 			});
 
 			actions.push({
 				type: "add",
-				path: `${PATH}/{{componentName}}/{{componentName}}.test.js`,
+				path: `${PATH}/{{properCase componentName}}/{{properCase componentName}}.test.js`,
 				templateFile: "./templates/test.js.hbs"
 			});
 
 			actions.push({
 				type: "add",
-				path: `${PATH}/{{componentName}}/README.md`,
+				path: `${PATH}/{{properCase componentName}}/README.md`,
 				templateFile: "./templates/README.md.hbs"
 			});
 
 			actions.push({
 				type: "add",
-				path: `${PATH}/{{componentName}}/index.js`,
+				path: `${PATH}/{{properCase componentName}}/index.js`,
 				templateFile: "./templates/index.js.hbs"
 			});
 
@@ -82,7 +82,7 @@ module.exports = plop => {
 				type: 'modify',
 				path: `${PATH}/index.js`,
 				pattern: /(\/\/ PLOP: Prepend import here)/gi,
-				template: `export { default as {{componentName}} } from './{{componentName}}';\n$1`
+				template: `export { default as {{properCase componentName}} } from './{{properCase componentName}}';\n$1`
 			});
 
 			return actions;
